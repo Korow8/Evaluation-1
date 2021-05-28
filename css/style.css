@@ -11,20 +11,45 @@
 
 /* DEBUG */
 
-/*main,nav,aside,section,header,footer,footer nav,footer .legal{
-    border:3px solid black !important; 
+main,nav,aside,section,header,footer,article,.container{
+    border:1px solid black !important; 
     margin: 10px !important;
     padding: 10px !important;
   }
+
+  .container{
+    background-color: darkgrey !important;
+  }
+  header{
+    background-color: #b39ddb !important;
+  }
+  nav{
+    background-color: #80cbc4 !important;
+  }
+  main{
+    background-color: #90caf9 !important;
+  }
+  section{
+    background-color: #80CBC4 !important;
+  }
+  article{
+    background-color: #a5d6a7 !important;
+  }
+  aside{
+    background-color: #ffab61 !important;
+  }
+  footer{
+    background-color: #f48fb1 !important;
+  }
   
   a{
-    color:blue
+    color:blue;
     border: 1px dashed red !important;
-    padding:2px !important;
+    /*padding:2px !important;*/
   }
   
   img{
     border:1px dashed blue !important;
-    padding:2px !important;
-  }*/
+    /*padding:2px !important;*/
+  }
   
