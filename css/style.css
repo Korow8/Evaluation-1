@@ -1,6 +1,9 @@
 /* ----- Header ----- 
    ========================================================================== */
-
+  header nav li{
+    list-style: none;
+    display: inline-block;
+  }
 
 /* ----- Main ----- 
   ========================================================================== */
@@ -8,6 +11,10 @@
 
 /* ----- Footer ----- 
   ========================================================================== */
+  footer .social li{
+    list-style: none;
+    display: inline-block;
+  }
 
 /* DEBUG */
 
@@ -45,11 +52,11 @@ main,nav,aside,section,header,footer,article,.container{
   a{
     color:blue;
     border: 1px dashed red !important;
-    /*padding:2px !important;*/
+    padding:2px !important;
   }
   
   img{
     border:1px dashed blue !important;
-    /*padding:2px !important;*/
+    padding:2px !important;
   }
   
