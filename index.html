@@ -24,17 +24,30 @@
 <body>
     <div class="container">
         <header class="row">
-            <h1 class="col-12">Titre</h1>
             <img class="col">
-            <nav class="col-9">
-                <ul>
-                    <li>Accueil</li>
+            <nav class="col-9 navbar navbar-expand-lg navbar-dark bg-primary">
+                
+                <h1 class="navbar-brand">Titre</h1>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Accueil </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Mon Premier don </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Contact </a>
+                        </li>
+                    </ul>
 
-                    <li>Articles</li>
-                    <li>Mon Premier don</li>
-                    <li>Contact</li>
-                </ul>
-
+                </div>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+                </ol>
             </nav>
         </header>
 
@@ -49,7 +62,7 @@
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="..." class="d-block w-100" alt="...">
