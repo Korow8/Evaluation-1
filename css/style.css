@@ -1,6 +1,10 @@
 /* ----- Header ----- 
    ========================================================================== */
-  header nav li{
+  header .logo img{
+    width: 100%;
+  }
+  
+   header nav li{
     list-style: none;
     display: inline-block;
   }
