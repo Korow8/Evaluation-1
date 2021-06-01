@@ -19,9 +19,15 @@
     padding:0;
   }
 
-  section,aside{
+  section > img, aside > img{
+    width: 100%;
+  }
+
+  section,article,aside{
     margin-bottom: 10px;
   }
+
+
 
   /*@media screen and (min-width: 992px){
     aside{
