@@ -7,21 +7,51 @@
 
 /* ----- Main ----- 
   ========================================================================== */
+  main,section,aside{
+    padding:10px;
+  }
+
+  main{
+    padding-bottom: 0;
+  }
+
+  main div.articles-section{
+    padding:0;
+  }
+
+  section,aside{
+    margin-bottom: 10px;
+  }
+
+  /*@media screen and (min-width: 992px){
+    aside{
+
+    }
+  }*/
+
 
 
 /* ----- Footer ----- 
   ========================================================================== */
+  footer,footer nav{
+    padding:10px;
+  }
+
   footer .social li{
     list-style: none;
     display: inline-block;
+  }
+
+  footer .numero{
+    height: 50px;
   }
 
 /* DEBUG */
 
 main,nav,aside,section,header,footer,article,.container{
     border:1px solid black !important; 
-    margin: 10px !important;
-    padding: 10px !important;
+    /*margin: 10px !important;
+    padding: 10px !important;*/
   }
 
   .container{
