@@ -59,6 +59,7 @@
    
    main.page-articles article a{
      width: 30%;
+     height: 20%;
    }
 
    main.page-articles article img{
@@ -81,7 +82,8 @@
   }
 
   footer .numero{
-    height: 50px;
+    max-height: 50px;
+    max-width: 411px;
   }
 
 /* ========================================================================== */
