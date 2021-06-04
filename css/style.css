@@ -50,14 +50,16 @@
     }
   }*/
 
-/* -- Articles --
+/* -- Articles / Evenements --
 	 -------------------------------------------------------------- */
 
-   main.page-articles article .card{
+   main.page-articles article .card,
+   main.page-evenements article .card{
      flex-direction: row;
    }
    
-   main.page-articles article a{
+   main.page-articles article a, 
+   main.page-evenements img{
      width: 30%;
      height: 20%;
    }
@@ -66,7 +68,8 @@
      width: 100%;
    }
 
-   main.page-articles article .card-body{
+   main.page-articles article .card-body,
+   main.page-evenements article .card-body{
      width: 65%;
    }
 
