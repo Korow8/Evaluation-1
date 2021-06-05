@@ -1,6 +1,23 @@
+.row{
+  margin-bottom: 1rem;
+}
+
+body{
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+}
+
 /* ----- Header ----- 
    ========================================================================== */
-   header .logo {
+   .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    color:#E20622;
+  }
+
+  header .row:first-child{
+    background-color: #00AAD3;
+  }
+
+  header .logo {
     padding-left: 0;
     max-height: 200px;
     max-width: 200px;
@@ -26,6 +43,10 @@ header nav li{
 
 /* ----- Main ----- 
  ========================================================================== */
+h2, .social a{
+  color: #003471;
+}
+
  main, section, aside{
    padding:10px;
  }
@@ -38,8 +59,15 @@ header nav li{
    padding:0;
  }
 
+ .articles-section section{
+   padding: 1.5rem;
+ }
  .articles-section article{
-   padding: 0.5rem;
+   padding: 0.7rem;
+ }
+
+ .articles-section .card-body{
+  background-color: #EEE;
  }
 
  section.premier-don div{
@@ -76,7 +104,7 @@ header nav li{
    }
  }
 
-/* -- Articles / Evenements --
+/* -- Pages Articles / Evenements --
   -------------------------------------------------------------- */
   main.page-articles article .card,
   main.page-evenements article .card{
@@ -123,12 +151,12 @@ header nav li{
 /* ========================================================================== */
 /* DEBUG */
 
-main,nav,aside,section,header,footer,.logo,article,.container{
- border:1px solid black !important; 
-   /*margin: 10px !important;
-   padding: 10px !important;*/
+/*main,nav,aside,section,header,footer,.logo,article,.container{
+ /*border:1px solid black !important; 
+   margin: 10px !important;
+   padding: 10px !important;
  }
-
+/*
  .container{
    background-color: darkgrey !important;
  }
@@ -152,9 +180,9 @@ main,nav,aside,section,header,footer,.logo,article,.container{
  }
  footer{
    background-color: #f48fb1 !important;
- }
+ }*/
  
- a{
+ /*a{
    color:blue;
    border: 1px dashed red !important;
    padding:2px !important;
@@ -163,5 +191,5 @@ main,nav,aside,section,header,footer,.logo,article,.container{
  img{
    border:1px dashed blue !important;
    padding:2px !important;
- }
+ }*/
  
