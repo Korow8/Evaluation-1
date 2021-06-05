@@ -10,15 +10,14 @@
     width: 100%;
   }
 
-   header nav li{
+  .navbar-brand{
+    padding-bottom: 5rem;
+    margin-right: 3rem;
+  }
+
+ header nav li{
     list-style: none;
     display: inline-block;
-  }
-  
-  header .navbar-nav{
-    position: absolute;
-    z-index: 100;
-    width:90%;
   }
 
   header .nav-item{
