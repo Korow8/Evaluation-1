@@ -1,161 +1,167 @@
 /* ----- Header ----- 
    ========================================================================== */
    header .logo {
-     padding-left: 0;
-     max-height: 200px;
-     max-width: 200px;
-   }
-   
-  header .logo img{
-    width: 100%;
+    padding-left: 0;
+    max-height: 200px;
+    max-width: 200px;
   }
+  
+ header .logo img{
+   width: 100%;
+ }
 
-  .navbar-brand{
-    padding-bottom: 5rem;
-    margin-right: 3rem;
-  }
+ .navbar-brand{
+   padding-bottom: 5rem;
+   margin-right: 3rem;
+ }
 
- header nav li{
-    list-style: none;
-    display: inline-block;
-  }
+header nav li{
+   list-style: none;
+   display: inline-block;
+ }
 
-  header .nav-item{
-    text-align: right;
-  }
+ header .nav-item{
+   text-align: right;
+ }
 
 /* ----- Main ----- 
-  ========================================================================== */
-  main, section, aside{
-    padding:10px;
+ ========================================================================== */
+ main, section, aside{
+   padding:10px;
+ }
+
+ main{
+   padding-bottom: 0;
+ }
+
+ main .articles-section{
+   padding:0;
+ }
+
+ .articles-section article{
+   padding: 0.5rem;
+ }
+
+ section.premier-don div{
+   display: flex;
+   justify-content: center;
+ }
+
+ aside{
+   display: flex;
+   flex-direction: column;
+ }
+
+ aside > img,
+ .premier-don img{
+   width: 100%;
+ }
+
+ aside > img:nth-child(3){
+   display: none;
+ }
+
+ section,article,aside{
+   margin-bottom: 10px;
+ }
+
+
+ @media screen and (min-width: 992px){
+   aside > img:nth-child(2),
+   aside h2{
+     display: none;
+   }
+   aside > img:nth-child(3){
+     display: inline;
+   }
+ }
+
+/* -- Articles / Evenements --
+  -------------------------------------------------------------- */
+  main.page-articles article .card,
+  main.page-evenements article .card{
+    flex-direction: row;
+  }
+  
+  main.page-articles article a, 
+  main.page-evenements img{
+    width: 30%;
+    height: 20%;
   }
 
-  main{
-    padding-bottom: 0;
-  }
-
-  main .articles-section{
-    padding:0;
-  }
-
-  .articles-section article{
-    padding: 0.5rem;
-  }
-
-  section.premier-don div{
-    display: flex;
-    justify-content: center;
-  }
-
-  aside{
-    display: flex;
-    flex-direction: column;
-  }
-
-  aside > img,
-  .premier-don img{
+  main.page-articles article img{
     width: 100%;
   }
 
-  aside > img:nth-child(3){
-    display: none;
+  main.page-articles article .card-body,
+  main.page-evenements article .card-body{
+    width: 65%;
   }
-
-  section,article,aside{
-    margin-bottom: 10px;
-  }
-
-
-  @media screen and (min-width: 992px){
-    aside > img:nth-child(2),
-    aside h2{
-      display: none;
-    }
-    aside > img:nth-child(3){
-      display: inline;
-    }
-  }
-
-/* -- Articles / Evenements --
-	 -------------------------------------------------------------- */
-   main.page-articles article .card,
-   main.page-evenements article .card{
-     flex-direction: row;
-   }
-   
-   main.page-articles article a, 
-   main.page-evenements img{
-     width: 30%;
-     height: 20%;
-   }
-
-   main.page-articles article img{
-     width: 100%;
-   }
-
-   main.page-articles article .card-body,
-   main.page-evenements article .card-body{
-     width: 65%;
-   }
 
 /* ----- Footer ----- 
-  ========================================================================== */
-  footer,footer nav{
-    padding:10px;
-  }
+ ========================================================================== */
+ footer,footer nav{
+   padding:10px;
+ }
 
-  footer .social li{
-    list-style: none;
-    display: inline-block;
-  }
+ footer .social li{
+   list-style: none;
+   display: inline-block;
+ }
 
-  footer .numero{
-    max-height: 50px;
-    max-width: 411px;
-  }
+ footer .numero{
+   max-height: 50px;
+   max-width: 411px;
+ }
+
+ nav.social{
+   display: flex;
+   justify-content: center;
+ }
+
 
 /* ========================================================================== */
 /* DEBUG */
 
 main,nav,aside,section,header,footer,.logo,article,.container{
-  border:1px solid black !important; 
-    /*margin: 10px !important;
-    padding: 10px !important;*/
-  }
+ border:1px solid black !important; 
+   /*margin: 10px !important;
+   padding: 10px !important;*/
+ }
 
-  .container{
-    background-color: darkgrey !important;
-  }
-  header{
-    background-color: #b39ddb !important;
-  }
-  nav{
-    background-color: #80cbc4 !important;
-  }
-  main{
-    background-color: #90caf9 !important;
-  }
-  section{
-    background-color: #80CBC4 !important;
-  }
-  article{
-    background-color: #a5d6a7 !important;
-  }
-  aside{
-    background-color: #ffab61 !important;
-  }
-  footer{
-    background-color: #f48fb1 !important;
-  }
-  
-  a{
-    color:blue;
-    border: 1px dashed red !important;
-    padding:2px !important;
-  }
-  
-  img{
-    border:1px dashed blue !important;
-    padding:2px !important;
-  }
-  
+ .container{
+   background-color: darkgrey !important;
+ }
+ header{
+   background-color: #b39ddb !important;
+ }
+ nav{
+   background-color: #80cbc4 !important;
+ }
+ main{
+   background-color: #90caf9 !important;
+ }
+ section{
+   background-color: #80CBC4 !important;
+ }
+ article{
+   background-color: #a5d6a7 !important;
+ }
+ aside{
+   background-color: #ffab61 !important;
+ }
+ footer{
+   background-color: #f48fb1 !important;
+ }
+ 
+ a{
+   color:blue;
+   border: 1px dashed red !important;
+   padding:2px !important;
+ }
+ 
+ img{
+   border:1px dashed blue !important;
+   padding:2px !important;
+ }
+ 
