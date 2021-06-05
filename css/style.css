@@ -1,9 +1,15 @@
 /* ----- Header ----- 
    ========================================================================== */
+   header .logo {
+     padding-left: 0;
+     max-height: 200px;
+     max-width: 200px;
+   }
+   
   header .logo img{
     width: 100%;
   }
-  
+
    header nav li{
     list-style: none;
     display: inline-block;
@@ -33,8 +39,27 @@
     padding:0;
   }
 
-  section > img, aside > img{
+  .articles-section article{
+    padding: 0.5rem;
+  }
+
+  section.premier-don div{
+    display: flex;
+    justify-content: center;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside > img,
+  .premier-don img{
     width: 100%;
+  }
+
+  aside > img:nth-child(3){
+    display: none;
   }
 
   section,article,aside{
@@ -42,17 +67,18 @@
   }
 
 
-
-
-  /*@media screen and (min-width: 992px){
-    aside{
-
+  @media screen and (min-width: 992px){
+    aside > img:nth-child(2),
+    aside h2{
+      display: none;
     }
-  }*/
+    aside > img:nth-child(3){
+      display: inline;
+    }
+  }
 
 /* -- Articles / Evenements --
 	 -------------------------------------------------------------- */
-
    main.page-articles article .card,
    main.page-evenements article .card{
      flex-direction: row;
@@ -92,8 +118,8 @@
 /* ========================================================================== */
 /* DEBUG */
 
-main,nav,aside,section,header,footer,article,.container{
-    border:1px solid black !important; 
+main,nav,aside,section,header,footer,.logo,article,.container{
+  border:1px solid black !important; 
     /*margin: 10px !important;
     padding: 10px !important;*/
   }
