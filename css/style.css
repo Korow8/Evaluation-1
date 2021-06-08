@@ -104,6 +104,21 @@ h2, .social a{
    }
  }
 
+ .articles-section img{
+   width: 100%;
+ }
+
+ .articles-section table,
+ .articles-section td{
+   border: 1px solid black;
+   padding: 10px;
+ }
+
+ .articles-section .mother-title{
+   transform: rotate(-90deg);
+   font-weight: bold;
+ }
+
 /* -- Pages Articles / Evenements --
   -------------------------------------------------------------- */
   main.page-articles article .card,
@@ -125,6 +140,16 @@ h2, .social a{
   main.page-evenements article .card-body{
     width: 65%;
   }
+
+ /* -- Pages Contact --
+  -------------------------------------------------------------- */ 
+form input, form textarea, form label{
+  display: block;
+}
+
+form input[type="checkbox"]{
+  margin-top: 1rem;
+}
 
 /* ----- Footer ----- 
  ========================================================================== */
